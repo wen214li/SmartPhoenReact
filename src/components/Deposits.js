@@ -22,9 +22,6 @@ export default function Deposits() {
       <Typography component="p" variant="h6">
         $3,024.00
       </Typography>
-      <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
-      </Typography>
     </React.Fragment>
   );
 }
