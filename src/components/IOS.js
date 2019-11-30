@@ -5,8 +5,7 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
+import LineChart from './LineChart';
 
 const useStyles = makeStyles(theme => ({
     appBarSpacer: theme.mixins.toolbar,
@@ -40,13 +39,37 @@ const useStyles = makeStyles(theme => ({
   }));
 
 export default function IOS() {
-  const classes = useStyles();  
+  const classes = useStyles();
+  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
+  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
+  const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
+
   return (
     <main className={classes.content}>
       <div className={classes.appBarSpacer} />
-      <Typography component="h4" variant="h6" color="Primary" gutterBottom>
-        IOS page
-      </Typography>
+      <Container maxWidth="lg" className={classes.container}>
+          <Grid container spacing={2}>
+            {/* Chart */}
+            <Grid item xs={12} md={7} lg={7}>
+              <Paper className={fixedMaxHeightPaper}>
+                <LineChart dataURL='http://localhost:4000/globalshipmentbyvendor' />
+              </Paper>
+            </Grid>
+            {/* Chart */}
+            <Grid item xs={12} md={5} lg={5}>
+              <Paper className={fixedMaxHeightPaper}>
+                <LineChart dataURL='http://localhost:4000/globalshipmentbyvendor' />
+              </Paper>
+            </Grid>
+            {/* Chart */}
+            <Grid item xs={12} md={12} lg={12}>
+              <Paper className={fixedMaxHeightPaper}>
+                <LineChart dataURL='http://localhost:4000/globalshipmentbyvendor' />
+              </Paper>
+            </Grid>
+          </Grid>
+
+        </Container>
     </main>
   );
 }

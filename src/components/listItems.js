@@ -10,9 +10,6 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
 import {Link} from "react-router-dom";
 
-function preventDefault(event) {
-  event.preventDefault();
-}
 
 export const mainListItems = (
   <div>
