@@ -17,7 +17,7 @@ import { mainListItems } from './components/listItems';
 import Overview from './components/Overview.js';
 import IOS from './components/IOS.js';
 import Android from './components/Android.js';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {Switch,Route} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -158,7 +158,11 @@ export default function App() {
         <Divider />
         <List>{mainListItems}</List>
       </Drawer>
+
       <Switch>
+        <Route exact path="/">
+          <Overview/>
+        </Route>
         <Route path="/overview">
           <Overview/>
         </Route>
@@ -174,9 +178,7 @@ export default function App() {
         <Route path="/placeholder">
           <Overview/>
         </Route>
-      </Switch>
-      
-          
+      </Switch>         
     </div>
   );
 }

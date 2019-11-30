@@ -7,15 +7,17 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
-import Chart from './Chart';
+import NumberCard from './NumberCard';
+import LineChart from './LineChart';
+import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
-import Deposits from './Deposits';
+import PieChart from './PieChart'
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -36,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   container: {
-    paddingTop: theme.spacing(4),
+    paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(4),
   },
   paper: {
@@ -63,51 +65,50 @@ export default function Overview() {
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
   return (
-    
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
+        <Container maxWidth="xl" className={classes.container}>
           <Grid container spacing={2}>
-            {/* Recent Deposits */}
+            {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Deposits />
+                <NumberCard name='Production Volume 2019' value='1,480,000,000 units'/>
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+            {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Deposits />
+                <NumberCard name='Global smartphone sales' value='$ 522 billion USD'/>
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+            {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Deposits />
+                <NumberCard name='Best seller in 2019 Q1' value='iPhoneXR: 11.57 million units'/>
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+            {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Deposits />
+                <NumberCard name='Smartphone average price in 2019' value='$ 684.8 USD'/>
               </Paper>
             </Grid>
             {/* Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <Chart />
+                <StackedBarChart dataURL='http://localhost:4000/androidvsios' />
               </Paper>
             </Grid>
             {/* Chart */}
             <Grid item xs={12} md={5} lg={5}>
               <Paper className={fixedMaxHeightPaper}>
-                <Chart />
+                <PieChart dataURL='http://localhost:4000/marketshare' />
               </Paper>
             </Grid>
             {/* Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <Chart />
+                <LineChart dataURL='http://localhost:4000/globalshipmentbyvendor' />
               </Paper>
             </Grid>
             {/* Radar Chart */}
