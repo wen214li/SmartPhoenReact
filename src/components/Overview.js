@@ -93,19 +93,19 @@ export default function Overview() {
                 <NumberCard name='Smartphone average price in 2019' value='$ 684.8 USD'/>
               </Paper>
             </Grid>
-            {/* Chart */}
+            {/* Stacked Bar Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
                 <StackedBarChart dataURL='http://localhost:4000/androidvsios' />
               </Paper>
             </Grid>
-            {/* Chart */}
+            {/* Pie Chart */}
             <Grid item xs={12} md={5} lg={5}>
               <Paper className={fixedMaxHeightPaper}>
                 <PieChart dataURL='http://localhost:4000/marketshare' />
               </Paper>
             </Grid>
-            {/* Chart */}
+            {/* Line Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
                 <LineChart dataURL='http://localhost:4000/globalshipmentbyvendor' />

@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useTheme } from '@material-ui/core/styles';
 import { PieChart, Pie, Cell, LabelList, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Title from './Title';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#64b2ed', '#ff6969','#ebe283', '#7acf7e', '#84e0e3', '#9a7ee6', '#e67ac7'];
 
 export default function MyPieChart(props) {
-    const theme = useTheme();
     const [data, setData] = useState([]);
-  
+    const [dataTitle, setDataTitle] = useState('Title');
+
     useEffect(
       () => {
-        console.log(props.dataURL);
+        
         const loadData = async () => {
           const response = await axios.get(props.dataURL);
-          console.log(response.data);
-          setData(response.data);
-          
+          setData(response.data.data);
+          setDataTitle(response.data.title);
         };
         loadData()
         
@@ -26,10 +24,10 @@ export default function MyPieChart(props) {
   
     return (
       <React.Fragment>
-        <Title>Market Share</Title>
+        <Title>{dataTitle}</Title>
         <ResponsiveContainer>
           <PieChart width={400} height={400}>
-            <Pie isAnimationActive={false} data={data} 
+            <Pie isAnimationActive={true} data={data} 
             nameKey="Brand" dataKey="Percentage"  
             outerRadius={80} fill="#8884d8" label={true}>
               {
