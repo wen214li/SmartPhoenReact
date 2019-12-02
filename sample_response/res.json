@@ -37,211 +37,479 @@
     }
   ],
 
-  "androidvsios":[
-    {
-      "year": "2014",
-      "Android": 78.8,
-      "iOS": 14.8
+  "androidvsios":{
+    "dataKey":{
+      "key0":"Android",
+      "key1":"iOS"
     },
-    {
-      "year": "2015",
-      "Android": 80.6,
-      "iOS": 16.1
-    },
-    {
-      "year": "2016",
-      "Android": 84.4,
-      "iOS": 14.6
-    },
-    {
-      "year": "2017",
-      "Android": 85.1,
-      "iOS": 14.7
-    },
-    {
-      "year": "2018",
-      "Android": 85.1,
-      "iOS": 14.9
-    },
-    {
-      "year": "2019",
-      "Android": 86.7,
-      "iOS": 13.3
-    }
-  ],
+    "data":[
+      {
+        "time": "2014",
+        "Android": 78.8,
+        "iOS": 14.8
+      },
+      {
+        "time": "2015",
+        "Android": 80.6,
+        "iOS": 16.1
+      },
+      {
+        "time": "2016",
+        "Android": 84.4,
+        "iOS": 14.6
+      },
+      {
+        "time": "2017",
+        "Android": 85.1,
+        "iOS": 14.7
+      },
+      {
+        "time": "2018",
+        "Android": 85.1,
+        "iOS": 14.9
+      },
+      {
+        "time": "2019",
+        "Android": 86.7,
+        "iOS": 13.3
+      }
+    ]
+  },
 
-  "globalshipmentbyvendor":[
-    {
-      "time": "Q1 '15",
-      "Samsung": 82.4,
-      "Apple": 61.2,
-      "Huawei*": 17.4,
-      "Xiaomi": 17,
-      "OPPO": 7.3
+  "globalshipmentbyvendor":{
+    "title": "Global smartphone shipments by manufacturer 2015-2019",
+    "dataKey":{
+      "key0": "Samsung",
+      "key1": "Apple",
+      "key2": "Huawei",
+      "key3":"Xiaomi",
+      "key4": "OPPO"
     },
-    {
-      "time": "Q2 '15",
-      "Samsung": 73,
-      "Apple": 47.5,
-      "Huawei*": 29.6,
-      "Xiaomi": 17.9,
-      "OPPO": 9.6
-    },
-    {
-      "time": "Q3 '15",
-      "Samsung": 83.8,
-      "Apple": 48,
-      "Huawei*": 27.3,
-      "Xiaomi": 18.3,
-      "OPPO": 11.4
-    },
-    {
-      "time": "Q4 '15",
-      "Samsung": 81.7,
-      "Apple": 74.8,
-      "Huawei*": 32.7,
-      "Xiaomi": 18.2,
-      "OPPO": 14.4
-    },
-    {
-      "time": "Q1 '16",
-      "Samsung": 79.2,
-      "Apple": 51.2,
-      "Huawei*": 28.1,
-      "Xiaomi": 16,
-      "OPPO": 19.7
-    },
-    {
-      "time": "Q2 '16",
-      "Samsung": 77,
-      "Apple": 40.4,
-      "Huawei*": 32.1,
-      "Xiaomi": 15,
-      "OPPO": 22.6
-    },
-    {
-      "time": "Q3 '16",
-      "Samsung": 76.1,
-      "Apple": 45.5,
-      "Huawei*": 33.7,
-      "Xiaomi": 13.6,
-      "OPPO": 25.8
-    },
-    {
-      "time": "Q4 '16",
-      "Samsung": 77.5,
-      "Apple": 78.3,
-      "Huawei*": 45.4,
-      "Xiaomi": 14.3,
-      "OPPO": 31.6
-    },
-    {
-      "time": "Q1 '17",
-      "Samsung": 80.1,
-      "Apple": 50.8,
-      "Huawei*": 34.5,
-      "Xiaomi": 14.8,
-      "OPPO": 25.8
-    },
-    {
-      "time": "Q2' 17",
-      "Samsung": 79.8,
-      "Apple": 41,
-      "Huawei*": 38.5,
-      "Xiaomi": 21.4,
-      "OPPO": 28
-    },
-    {
-      "time": "Q3 '17",
-      "Samsung": 83.3,
-      "Apple": 46.7,
-      "Huawei*": 39.1,
-      "Xiaomi": 28.3,
-      "OPPO": 30.6
-    },
-    {
-      "time": "Q4 '17",
-      "Samsung": 74.5,
-      "Apple": 77.3,
-      "Huawei*": 42.1,
-      "Xiaomi": 28.2,
-      "OPPO": 27.3
-    },
-    {
-      "time": "Q1 '18",
-      "Samsung": 78.2,
-      "Apple": 52.2,
-      "Huawei*": 39.3,
-      "Xiaomi": 27.8,
-      "OPPO": 24.6
-    },
-    {
-      "time": "Q2 '18",
-      "Samsung": 71.5,
-      "Apple": 41.3,
-      "Huawei*": 54.2,
-      "Xiaomi": 32.4,
-      "OPPO": 29.4
-    },
-    {
-      "time": "Q3 '18",
-      "Samsung": 72.2,
-      "Apple": 46.9,
-      "Huawei*": 52,
-      "Xiaomi": 34.3,
-      "OPPO": 29.9
-    },
-    {
-      "time": "Q4 '18",
-      "Samsung": 70.4,
-      "Apple": 68.4,
-      "Huawei*": 60.5,
-      "Xiaomi": 28.6,
-      "OPPO": 29.2
-    },
-    {
-      "time": "Q1 '19",
-      "Samsung": 71.9,
-      "Apple": 36.4,
-      "Huawei*": 59.1,
-      "Xiaomi": 25,
-      "OPPO": 23.1
-    },
-    {
-      "time": "Q2 '19",
-      "Samsung": 75.5,
-      "Apple": 33.8,
-      "Huawei*": 58.7,
-      "Xiaomi": 32.3,
-      "OPPO": 29.5
-    }
-  ],
+    "data":[
+      {
+        "time": "Q1 '15",
+        "Samsung": 82.4,
+        "Apple": 61.2,
+        "Huawei": 17.4,
+        "Xiaomi": 17,
+        "OPPO": 7.3
+      },
+      {
+        "time": "Q2 '15",
+        "Samsung": 73,
+        "Apple": 47.5,
+        "Huawei": 29.6,
+        "Xiaomi": 17.9,
+        "OPPO": 9.6
+      },
+      {
+        "time": "Q3 '15",
+        "Samsung": 83.8,
+        "Apple": 48,
+        "Huawei": 27.3,
+        "Xiaomi": 18.3,
+        "OPPO": 11.4
+      },
+      {
+        "time": "Q4 '15",
+        "Samsung": 81.7,
+        "Apple": 74.8,
+        "Huawei": 32.7,
+        "Xiaomi": 18.2,
+        "OPPO": 14.4
+      },
+      {
+        "time": "Q1 '16",
+        "Samsung": 79.2,
+        "Apple": 51.2,
+        "Huawei": 28.1,
+        "Xiaomi": 16,
+        "OPPO": 19.7
+      },
+      {
+        "time": "Q2 '16",
+        "Samsung": 77,
+        "Apple": 40.4,
+        "Huawei": 32.1,
+        "Xiaomi": 15,
+        "OPPO": 22.6
+      },
+      {
+        "time": "Q3 '16",
+        "Samsung": 76.1,
+        "Apple": 45.5,
+        "Huawei": 33.7,
+        "Xiaomi": 13.6,
+        "OPPO": 25.8
+      },
+      {
+        "time": "Q4 '16",
+        "Samsung": 77.5,
+        "Apple": 78.3,
+        "Huawei": 45.4,
+        "Xiaomi": 14.3,
+        "OPPO": 31.6
+      },
+      {
+        "time": "Q1 '17",
+        "Samsung": 80.1,
+        "Apple": 50.8,
+        "Huawei": 34.5,
+        "Xiaomi": 14.8,
+        "OPPO": 25.8
+      },
+      {
+        "time": "Q2' 17",
+        "Samsung": 79.8,
+        "Apple": 41,
+        "Huawei": 38.5,
+        "Xiaomi": 21.4,
+        "OPPO": 28
+      },
+      {
+        "time": "Q3 '17",
+        "Samsung": 83.3,
+        "Apple": 46.7,
+        "Huawei": 39.1,
+        "Xiaomi": 28.3,
+        "OPPO": 30.6
+      },
+      {
+        "time": "Q4 '17",
+        "Samsung": 74.5,
+        "Apple": 77.3,
+        "Huawei": 42.1,
+        "Xiaomi": 28.2,
+        "OPPO": 27.3
+      },
+      {
+        "time": "Q1 '18",
+        "Samsung": 78.2,
+        "Apple": 52.2,
+        "Huawei": 39.3,
+        "Xiaomi": 27.8,
+        "OPPO": 24.6
+      },
+      {
+        "time": "Q2 '18",
+        "Samsung": 71.5,
+        "Apple": 41.3,
+        "Huawei": 54.2,
+        "Xiaomi": 32.4,
+        "OPPO": 29.4
+      },
+      {
+        "time": "Q3 '18",
+        "Samsung": 72.2,
+        "Apple": 46.9,
+        "Huawei": 52,
+        "Xiaomi": 34.3,
+        "OPPO": 29.9
+      },
+      {
+        "time": "Q4 '18",
+        "Samsung": 70.4,
+        "Apple": 68.4,
+        "Huawei": 60.5,
+        "Xiaomi": 28.6,
+        "OPPO": 29.2
+      },
+      {
+        "time": "Q1 '19",
+        "Samsung": 71.9,
+        "Apple": 36.4,
+        "Huawei": 59.1,
+        "Xiaomi": 25,
+        "OPPO": 23.1
+      },
+      {
+        "time": "Q2 '19",
+        "Samsung": 75.5,
+        "Apple": 33.8,
+        "Huawei": 58.7,
+        "Xiaomi": 32.3,
+        "OPPO": 29.5
+      }
+    ] 
+  },
 
-  "marketshare":[
-    {
-      "Brand": "Samsung",
-      "Percentage": 22.7
+  "marketshare":{
+    "title":"Brands Market Share",
+    "data":[
+      {
+        "Brand": "Samsung",
+        "Percentage": 22.7
+      },
+      {
+        "Brand": "Apple",
+        "Percentage": 10.1
+      },
+      {
+        "Brand": "Huawei",
+        "Percentage": 17.6
+      },
+      {
+        "Brand": "Xiaomi",
+        "Percentage": 9.7
+      },
+      {
+        "Brand": "OPPO",
+        "Percentage": 8.9
+      },
+      {
+        "Brand": "Other",
+        "Percentage": 31
+      }
+    ]
+  },
+
+  "applemodelshare":{
+    "title":"Sales share of iPhone by model 2019",
+    "data":[
+      {
+        "Brand": "iPhone XR",
+        "Percentage": 48
+      },
+      {
+        "Brand": "iPhone XS Max",
+        "Percentage": 9
+      },
+      {
+        "Brand": "iPhone XS",
+        "Percentage": 10
+      },
+      {
+        "Brand": "iPhone 8 Plus",
+        "Percentage": 10
+      },
+      {
+        "Brand": "iPhone 8",
+        "Percentage": 11.5
+      },
+      {
+        "Brand": "iPhone 7 Plus",
+        "Percentage": 4
+      },
+      {
+        "Brand": "other",
+        "Percentage": 8
+      }
+    ]
+  },
+
+  "iphoneuser":{
+    "title": "Number of iPhone users in the United States(in millions)",
+    "dataKey":{
+      "key0": "users"
     },
-    {
-      "Brand": "Apple",
-      "Percentage": 10.1
+    "data":[
+      {
+        "time": 2012,
+        "users": 44.53
+      },
+      {
+        "time": 2013,
+        "users": 57.8
+      },
+      {
+        "time": 2014,
+        "users": 72.3
+      },
+      {
+        "time": 2015,
+        "users": 82.5
+      },
+      {
+        "time": 2016,
+        "users": 90.1
+      },
+      {
+        "time": 2017,
+        "users": 97.2
+      },
+      {
+        "time": 2018,
+        "users": 101.9
+      },
+      {
+        "time": 2019,
+        "users": 105.2
+      }
+    ]
+  },
+
+  "androiduser":{
+    "title": "Number of android users in the United States(in millions)",
+    "dataKey":{
+      "key0": "users"
     },
-    {
-      "Brand": "Huawei",
-      "Percentage": 17.6
+    "data":[
+      {
+        "time": 2014,
+        "users": 87.7
+      },
+      {
+        "time": 2015,
+        "users": 98.5
+      },
+      {
+        "time": 2016,
+        "users": 107.7
+      },
+      {
+        "time": 2018,
+        "users": 120.5
+      },
+      {
+        "time": 2019,
+        "users": 124.4
+      }
+    ]
+  },
+  "googleplayapps":{
+    "title":"Number of available apps in the Google Play(in thousand)",
+    "dataKey":{
+      "key0":"value"
     },
-    {
-      "Brand": "Xiaomi",
-      "Percentage": 9.7
-    },
-    {
-      "Brand": "OPPO",
-      "Percentage": 8.9
-    },
-    {
-      "Brand": "Other",
-      "Percentage": 31
-    }
-  ]
+    "data":[
+      {
+        "time": "Dec '09",
+        "value": 16
+      },
+      {
+        "time": "Mar '10",
+        "value": 30
+      },
+      {
+        "time": "Apr '10",
+        "value": 38
+      },
+      {
+        "time": "Jul '10",
+        "value": 70
+      },
+      {
+        "time": "Oct '10",
+        "value": 100
+      },
+      {
+        "time": "Apr '11",
+        "value": 200
+      },
+      {
+        "time": "Jul '11",
+        "value": 250
+      },
+      {
+        "time": "Aug '11",
+        "value": 300
+      },
+      {
+        "time": "Dec '11",
+        "value": 400
+      },
+      {
+        "time": "Feb '12",
+        "value": 450
+      },
+      {
+        "time": "May '12",
+        "value": 500
+      },
+      {
+        "time": "Jun '12",
+        "value": 600
+      },
+      {
+        "time": "Sep '12",
+        "value": 675
+      },
+      {
+        "time": "Oct '12",
+        "value": 700
+      },
+      {
+        "time": "Apr '13",
+        "value": 850
+      },
+      {
+        "time": "Jul '13",
+        "value": 1000
+      },
+      {
+        "time": "Jul '14",
+        "value": 1300
+      },
+      {
+        "time": "Feb '15",
+        "value": 1400
+      },
+      {
+        "time": "Jul '15",
+        "value": 1600
+      },
+      {
+        "time": "Nov '15",
+        "value": 1800
+      },
+      {
+        "time": "Feb '16",
+        "value": 2000
+      },
+      {
+        "time": "Sep '16",
+        "value": 2400
+      },
+      {
+        "time": "Dec '16",
+        "value": 2600
+      },
+      {
+        "time": "Mar '17",
+        "value": 2800
+      },
+      {
+        "time": "Jun '17",
+        "value": 3000
+      },
+      {
+        "time": "Sep '17",
+        "value": 3300
+      },
+      {
+        "time": "Dec '17",
+        "value": 3500
+      },
+      {
+        "time": "Mar '18",
+        "value": 3600
+      },
+      {
+        "time": "Jun '18",
+        "value": 3300
+      },
+      {
+        "time": "Sep '18",
+        "value": 2600
+      },
+      {
+        "time": "Dec '18",
+        "value": 2600
+      },
+      {
+        "time": "Mar '19",
+        "value": 2600
+      },
+      {
+        "time": "Jun '19",
+        "value": 2700
+      },
+      {
+        "time": "Sep '19",
+        "value": 2800
+      }
+    ]
+  }
+  
     
 }

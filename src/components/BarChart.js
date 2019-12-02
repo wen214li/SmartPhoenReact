@@ -3,6 +3,8 @@ import { useTheme } from '@material-ui/core/styles';
 import axios from 'axios';
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
 import Title from './Title';
+import Typography from '@material-ui/core/Typography';
+
 
 /* Data Format
 [
@@ -16,10 +18,11 @@ import Title from './Title';
 ];
 */
 
-export default function StackedBarChart(props) {
+export default function MyBarChart(props) {
   const theme = useTheme();
   const [data, setData] = useState([]);
-  const [dataKey, setDataKey] = useState([]);
+  const [dataKey, setDataKey] = useState({});
+  const [dataTitle, setDataTitle] = useState('Title');
   
   useEffect(
     () => {
@@ -27,6 +30,7 @@ export default function StackedBarChart(props) {
         const response = await axios.get(props.dataURL);
         setData(response.data.data);
         setDataKey(response.data.dataKey);
+        setDataTitle(response.data.title);
       };
       loadData()
       
@@ -35,18 +39,16 @@ export default function StackedBarChart(props) {
 
   return (
     <React.Fragment>
-      <Title>Share of smartphone by operating system (percentage)</Title>
+      <Title>{dataTitle}</Title>
       <ResponsiveContainer>
         <BarChart width={600} height={300} data={data}
-          margin={{top: 20, right: 30, left: 20, bottom: 5}}
-          barCategoryGap={35}>
+          margin={{top: 20, right: 30, left: 20, bottom: 5}}>
           <CartesianGrid strokeDasharray="3 3"/>
-          <XAxis dataKey="year" stroke={theme.palette.text.secondary}/>
+          <XAxis dataKey="time" stroke={theme.palette.text.secondary}/>
           <YAxis stroke={theme.palette.text.secondary}/>
           <Tooltip/>
           <Legend />
-          <Bar dataKey={dataKey.key0} stackId="a" fill="#1457c4" />
-          <Bar dataKey={dataKey.key1} stackId="a" fill="#ff7878" />
+          <Bar dataKey={dataKey.key0} fill="#32a0fa" label/>
         </BarChart>
       </ResponsiveContainer>
     </React.Fragment>
