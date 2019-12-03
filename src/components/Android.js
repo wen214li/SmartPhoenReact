@@ -63,7 +63,6 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={5} lg={5}>
               <Paper className={fixedMaxHeightPaper}>
-                
               </Paper>
             </Grid>
             {/* Chart */}

@@ -9,6 +9,7 @@ import BarChart from './BarChart';
 import PieChart from './PieChart'
 import Box from '@material-ui/core/Box';
 import Copyright from './Copyright'
+import SingleLineGridList from './SingleLineGridList'
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -67,10 +68,9 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                
+                <SingleLineGridList />
               </Paper>
             </Grid>
-            
           </Grid>
           <Box pt={4}>
             <Copyright />

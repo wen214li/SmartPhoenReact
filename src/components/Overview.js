@@ -65,53 +65,25 @@ export default function Overview() {
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3} direction='column'>
               <Paper className={fixedMinHeightPaper}>
-              <Grid container wrap="nowrap">
-                <Grid item alignItem='center'>
-                  <LocalShippingIcon style={{ fontSize: 90 }}/>
-                </Grid>
-                <Grid item>
-                  <NumberCard name='Production Volume 2019' value='1,480' text=' million units' />
-                </Grid>
-              </Grid>
+                <NumberCard name='Production Volume' value='1,480' text=' million units' />
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Grid container wrap="nowrap">
-                  <Grid item alignItem='center'>
-                    <AttachMoneyIcon style={{ fontSize: 90 }}/>
-                  </Grid>
-                  <Grid item>
-                  <NumberCard name='Global Sales 2019' value='$522' text=' billion USD'/>
-                  </Grid>
-                </Grid>
+                <NumberCard name='Global Sales' value='$522' text=' billion USD'/>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Grid container wrap="nowrap">
-                    <Grid item alignItem='center'>
-                      <PhoneIphoneIcon style={{ fontSize: 90 }}/>
-                    </Grid>
-                    <Grid item>
-                    <NumberCard name='Best Seller in 2019 Q1' value='iPhoneXR' text=' 11.57 million units'/>
-                    </Grid>
-                  </Grid>
+                <NumberCard name='Global Sales' value='$522' text=' billion USD'/>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <Grid container wrap="nowrap">
-                    <Grid item alignItem='center'>
-                      <LocalOfferIcon style={{ fontSize: 90 }}/>
-                    </Grid>
-                    <Grid item>
-                      <NumberCard name='Average Price in 2019' value='$ 684.8' text=' USD'/>
-                    </Grid>
-                  </Grid>
+                <NumberCard name='Average Price' value='$ 684.8' text=' USD'/>
               </Paper>
             </Grid>
             {/* Stacked Bar Chart */}
