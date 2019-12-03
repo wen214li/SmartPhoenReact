@@ -24,10 +24,11 @@ const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    // background: '#394077'
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
-    background: '#7c93a3',
+    background: '#232356',
   },
   toolbarIcon: {
     display: 'flex',
@@ -64,6 +65,7 @@ const useStyles = makeStyles(theme => ({
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
+    background: '#CDCDCF',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,

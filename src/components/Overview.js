@@ -1,30 +1,23 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
+import Box from '@material-ui/core/Box';
+
 import NumberCard from './NumberCard';
 import LineChart from './LineChart';
 import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
+import SmartphoneIcon from '@material-ui/icons/Smartphone';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import Copyright from './Copyright'
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 
 const useStyles = makeStyles(theme => ({
@@ -51,7 +44,8 @@ const useStyles = makeStyles(theme => ({
     height: 240,
   },
   fixedMinHeight: {
-    height: 120,
+    height: 130,
+    background: '#D07AA0'
   },
   fixedMaxHeight: {
     height: 360,
@@ -60,7 +54,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function Overview() {
   const classes = useStyles();
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
   const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
@@ -68,29 +61,57 @@ export default function Overview() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} alignItems="center">
             {/* Number Card */}
-            <Grid item xs={3} md={3} lg={3}>
+            <Grid item xs={3} md={3} lg={3} direction='column'>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Production Volume 2019' value='1,480,000,000 units'/>
+              <Grid container wrap="nowrap">
+                <Grid item alignItem='center'>
+                  <LocalShippingIcon style={{ fontSize: 90 }}/>
+                </Grid>
+                <Grid item>
+                  <NumberCard name='Production Volume 2019' value='1,480' text=' million units' />
+                </Grid>
+              </Grid>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Global smartphone sales' value='$ 522 billion USD'/>
+                <Grid container wrap="nowrap">
+                  <Grid item alignItem='center'>
+                    <AttachMoneyIcon style={{ fontSize: 90 }}/>
+                  </Grid>
+                  <Grid item>
+                  <NumberCard name='Global Sales 2019' value='$522' text=' billion USD'/>
+                  </Grid>
+                </Grid>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Best seller in 2019 Q1' value='iPhoneXR: 11.57 million units'/>
+                <Grid container wrap="nowrap">
+                    <Grid item alignItem='center'>
+                      <PhoneIphoneIcon style={{ fontSize: 90 }}/>
+                    </Grid>
+                    <Grid item>
+                    <NumberCard name='Best Seller in 2019 Q1' value='iPhoneXR' text=' 11.57 million units'/>
+                    </Grid>
+                  </Grid>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Smartphone average price in 2019' value='$ 684.8 USD'/>
+                <Grid container wrap="nowrap">
+                    <Grid item alignItem='center'>
+                      <LocalOfferIcon style={{ fontSize: 90 }}/>
+                    </Grid>
+                    <Grid item>
+                      <NumberCard name='Average Price in 2019' value='$ 684.8' text=' USD'/>
+                    </Grid>
+                  </Grid>
               </Paper>
             </Grid>
             {/* Stacked Bar Chart */}

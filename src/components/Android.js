@@ -7,6 +7,8 @@ import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
 import BarChart from './BarChart';
 import PieChart from './PieChart'
+import Box from '@material-ui/core/Box';
+import Copyright from './Copyright'
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -70,8 +72,10 @@ export default function Android() {
               <BarChart dataURL='http://localhost:4000/googleplayapps' />
               </Paper>
             </Grid>
-            
           </Grid>
+          <Box pt={4}>
+            <Copyright />
+          </Box>
 
         </Container>
     </main>
