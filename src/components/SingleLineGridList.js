@@ -6,7 +6,6 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import PageviewIcon from '@material-ui/icons/Pageview';
 import Title from './Title';
-import tileData from './tileData.js';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,58 +35,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SingleLineGridList() {
+export default function SingleLineGridList(props) {
   const classes = useStyles();
-//   const tileData = [
-//     {
-//         img: iphone_xr,
-//         title: 'iphone XR',
-//         rank: 1,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: samsung_image,
-//         title: 'Samsung',
-//         rank: 2,
-//     },
-//     {
-//         img: iphone_xr,
-//         title: 'iphone XR',
-//         rank: 3,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: xiaomi,
-//         title: 'Xiaomi',
-//         rank:4,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: xiaomi,
-//         title: 'Xiaomi',
-//         rank:5,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: xiaomi,
-//         title: 'Xiaomi',
-//         rank:6,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: xiaomi,
-//         title: 'Xiaomi',
-//         rank:7,
-//         url: "https://www.apple.com"
-//     },
-//     {
-//         img: xiaomi,
-//         title: 'Xiaomi',
-//         rank:8,
-//         url: "https://www.apple.com"
-//     },
-//   ];
-
+  const tileData = props.data
   return (
     <React.Fragment>
         <Title>Top 10 Best Seller Models</Title>

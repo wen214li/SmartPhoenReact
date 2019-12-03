@@ -2,7 +2,7 @@ import samsung_image from '../images/samsung.jpg'
 import iphone_xr from '../images/iphonexr.jpg'
 import xiaomi from '../images/xiaomi.jpg'
 
-const tileData = [
+const androidData = [
     {
         img: iphone_xr,
         title: 'iphone XR',
@@ -52,4 +52,4 @@ const tileData = [
     },
   ];
 
-export default tileData;
+export default androidData;
