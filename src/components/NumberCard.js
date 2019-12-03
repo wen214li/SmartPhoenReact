@@ -11,24 +11,24 @@ export default function Deposits(props) {
   const classes = useStyles();
   return (
     <React.Fragment>
-      {/* <Grid container wrap="nowrap">
-        <Grid item alignItem='center'>
-          <Typography component="p" variant="button">
-            {props.name}
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Typography component="p" variant="h6" color="secondary">
-            <font size='4' color='#FFFFF'><b>{props.value}{props.text}</b></font>
-          </Typography>
-        </Grid>
-      </Grid> */}
-      <Typography component="p" variant="h5">
+      <Typography component="p" variant="h6" color="primary">
         {props.name}
       </Typography>
-      <Typography component="p" variant="h3" color="secondary">
-        <font size='5' color='#FFFFF'><b>{props.value}{props.text}</b></font>
+      <Typography component="p" variant="h4">
+        <b>{props.value}</b>
       </Typography>
+      <Typography component="p" variant="h7">
+        {props.text}
+      </Typography>
+      {/* <Typography component="p" variant="h6">
+      <font color='#232356'>{props.name}</font>
+      </Typography>
+      <Typography component="p" variant="h4" color="secondary">
+        <font color='#FFFFF'><b>{props.value}</b></font>
+      </Typography>
+      <Typography component="p" variant="h7">
+        <font color='#FFFFF'>{props.text}</font>
+      </Typography> */}
     </React.Fragment>
   );
 }

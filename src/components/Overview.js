@@ -11,14 +11,7 @@ import LineChart from './LineChart';
 import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
-import SmartphoneIcon from '@material-ui/icons/Smartphone';
-import LocalShippingIcon from '@material-ui/icons/LocalShipping';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import LocalOfferIcon from '@material-ui/icons/LocalOffer';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import Copyright from './Copyright'
-
-
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -45,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   },
   fixedMinHeight: {
     height: 130,
-    background: '#D07AA0'
+    // background: '#CDCDCF'
   },
   fixedMaxHeight: {
     height: 360,
@@ -65,19 +58,19 @@ export default function Overview() {
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3} direction='column'>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Production Volume' value='1,480' text=' million units' />
+                <NumberCard name='Production Volume' value='1,480 million' text=' units' />
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Global Sales' value='$522' text=' billion USD'/>
+                <NumberCard name='Global Sales' value='$522 billion' text=' USD'/>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Global Sales' value='$522' text=' billion USD'/>
+                <NumberCard name='Best Seller' value='iPhoneXR' text=' 11.57 million units'/>
               </Paper>
             </Grid>
             {/* Number Card */}
