@@ -1,14 +1,13 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Title from './Title';
 
-const useStyles = makeStyles(theme => ({
-  // p: 5,
-}));
+// const useStyles = makeStyles(theme => ({
+//   // p: 5,
+// }));
 
 export default function Deposits(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <React.Fragment>
       <Typography component="p" variant="h6" color="primary">
