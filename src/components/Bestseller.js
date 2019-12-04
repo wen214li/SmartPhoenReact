@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(4),
+    paddingBottom: theme.spacing(2),
   },
   paper: {
     padding: theme.spacing(2),
@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     height: 120,
   },
   fixedMaxHeight: {
-    height: 360,
+    height: 340,
   },
 }));
 
