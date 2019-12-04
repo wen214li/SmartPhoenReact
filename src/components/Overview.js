@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Overview() {
   const classes = useStyles();
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
+
   const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 

@@ -13,7 +13,7 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems } from './components/listItems';
+import MyListItems from './components/listItems';
 import Overview from './components/Overview.js';
 import IOS from './components/IOS.js';
 import Android from './components/Android.js';
@@ -156,7 +156,7 @@ export default function App() {
           </IconButton>
         </div>
         <Divider />
-        <List>{mainListItems}</List>
+        <List><MyListItems/></List>
       </Drawer>
 
       <Switch>

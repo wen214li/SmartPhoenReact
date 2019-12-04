@@ -4,9 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import LineChart from './LineChart';
 import BarChart from './BarChart';
-import PieChart from './PieChart'
+
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -42,10 +41,7 @@ const useStyles = makeStyles(theme => ({
 export default function Android() {
   const classes = useStyles();
   
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
-  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
-
 
   return (
     <main className={classes.content}>
