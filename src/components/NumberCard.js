@@ -10,13 +10,13 @@ export default function Deposits(props) {
   return (
     <React.Fragment>
       <Typography component="p" variant="h6" color="primary">
-        {props.name}
+        <font color='#2a4053'>{props.name}</font>
       </Typography>
       <Typography component="p" variant="h4">
-        <b>{props.value}</b>
+        <font color='#2a4053'><b>{props.value}</b></font>
       </Typography>
       <Typography component="p" variant="h7">
-        {props.text}
+        <font color='#2a4053'>{props.text}</font>
       </Typography>
     </React.Fragment>
   );

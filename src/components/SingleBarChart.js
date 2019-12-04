@@ -3,8 +3,6 @@ import { useTheme } from '@material-ui/core/styles';
 import axios from 'axios';
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
 import Title from './Title';
-import Typography from '@material-ui/core/Typography';
-
 
 /* Data Format
 [
@@ -48,7 +46,7 @@ export default function MySingleBarChart(props) {
           <YAxis stroke={theme.palette.text.secondary}/>
           <Tooltip/>
           <Legend />
-          <Bar dataKey={dataKey['key0']} fill="#32a0fa" label/>
+          <Bar dataKey={dataKey['key0']} fill="#9abdc2" label/>
         </BarChart>
       </ResponsiveContainer>
     </React.Fragment>

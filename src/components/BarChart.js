@@ -35,8 +35,8 @@ export default function MyBarChart(props) {
           <YAxis stroke={theme.palette.text.secondary}/>
           <Tooltip/>
           <Legend />
-          <Bar dataKey={dataKey['key0']} fill="#32a0fa" label/>
-            <Bar dataKey={dataKey['key1']} fill="#ff7878" label/>
+          <Bar dataKey={dataKey['key0']} fill="#9abdc2" label/>
+            <Bar dataKey={dataKey['key1']} fill="#808e9d" label/>
         </BarChart>
       </ResponsiveContainer>
     </React.Fragment>
