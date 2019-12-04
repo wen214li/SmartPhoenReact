@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
-import BarChart from './BarChart';
+import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
 import Box from '@material-ui/core/Box';
 import Copyright from './Copyright'
@@ -45,8 +45,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function IOS() {
   const classes = useStyles();
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
-  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
+
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
   return (
@@ -57,7 +56,7 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <BarChart dataURL='http://localhost:4000/iphoneuser' />
+                <SingleBarChart dataURL='http://localhost:4000/iphoneuser' />
               </Paper>
             </Grid>
             {/* Chart */}

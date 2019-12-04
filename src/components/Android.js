@@ -5,10 +5,11 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
-import BarChart from './BarChart';
+import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
-import Box from '@material-ui/core/Box';
+// import Copyright from './Overview';
 import Copyright from './Copyright'
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -44,10 +45,7 @@ const useStyles = makeStyles(theme => ({
 export default function Android() {
   const classes = useStyles();
   
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
-  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
-
 
   return (
     <main className={classes.content}>
@@ -57,7 +55,7 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <BarChart dataURL='http://localhost:4000/androiduser' />
+                <SingleBarChart dataURL='http://localhost:4000/androiduser' />
               </Paper>
             </Grid>
             {/* Chart */}
@@ -68,7 +66,7 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-              <BarChart dataURL='http://localhost:4000/googleplayapps' />
+              <SingleBarChart dataURL='http://localhost:4000/googleplayapps' />
               </Paper>
             </Grid>
           </Grid>

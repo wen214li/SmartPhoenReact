@@ -11,7 +11,24 @@ import LineChart from './LineChart';
 import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
-import Copyright from './Copyright'
+import BarChart from './BarChart'
+import Copyright from './Copyright';
+// import Typography from '@material-ui/core/Typography';
+// import Link from '@material-ui/core/Link';
+
+// function Copyright() {
+//   return (
+//     <Typography variant="body2" color="textSecondary" align="center">
+//       {'Copyright © '}
+//       <Link color="inherit" href="">
+//         Your Website
+//       </Link>{' '}
+//       {new Date().getFullYear()}
+//       {'.'}
+//     </Typography>
+//   );
+// }
+
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -82,7 +99,7 @@ export default function Overview() {
             {/* Stacked Bar Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <StackedBarChart dataURL='http://localhost:4000/androidvsios' />
+                <BarChart dataURL='http://localhost:4000/androidvsios' />
               </Paper>
             </Grid>
             {/* Pie Chart */}
