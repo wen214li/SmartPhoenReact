@@ -50,7 +50,7 @@ export default function IOS() {
   return (
     <main className={classes.content}>
       <div className={classes.appBarSpacer} />
-      <Container maxWidth="lg" className={classes.container}>
+      <Container maxWidth="xl" className={classes.container}>
           <Grid container spacing={2}>
             {/* Chart */}
             <Grid item xs={12} md={6} lg={6}>

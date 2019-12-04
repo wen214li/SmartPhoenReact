@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   gridList: {
     flexWrap: 'nowrap',
-    width: 1200,
+    width: 1800,
     height: 500,
   },
   title: {
@@ -41,7 +41,7 @@ function SingleLineGridList(props) {
   return (
     <React.Fragment>
         {/* <Title>Top 10 Best Selling Models</Title> */}
-        <GridList className={classes.gridList} cols={5} spacing={5}>
+        <GridList className={classes.gridList} cols={8} spacing={5}>
         {/* <GridList className={gridListFixedImg} cols={5} spacing={5}> */}
             {tileData.map(tile => (
             <GridListTile key={tile.img} rows={1.5}>>

@@ -13,7 +13,7 @@ export default function Deposits(props) {
         <font color='#2a4053'>{props.name}</font>
       </Typography>
       <Typography component="p" variant="h4">
-        <font color='#2a4053'><b>{props.value}</b></font>
+        <font color='#808e9d'><b>{props.value}</b></font>
       </Typography>
       <Typography component="p" variant="h7">
         <font color='#2a4053'>{props.text}</font>
