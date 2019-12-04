@@ -7,6 +7,10 @@ import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
 import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
+import Box from '@material-ui/core/Box';
+import Copyright from './Copyright'
+import SingleLineGridList from './SingleLineGridList'
+import androidData from './tileData.js';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -41,8 +45,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function IOS() {
   const classes = useStyles();
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
-  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
+
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
   return (
@@ -65,12 +68,13 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                
+                <SingleLineGridList data={androidData}/>
               </Paper>
             </Grid>
-            
           </Grid>
-
+          <Box pt={4}>
+            <Copyright />
+          </Box>
         </Container>
     </main>
   );

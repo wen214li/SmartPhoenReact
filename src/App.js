@@ -9,11 +9,14 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems } from './components/listItems';
+import MyListItems from './components/listItems';
+
+
+
 import Overview from './components/Overview.js';
 import IOS from './components/IOS.js';
 import Android from './components/Android.js';
@@ -24,10 +27,12 @@ const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    // background: '#394077'
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
-    background: '#7c93a3',
+    background: '#58508d',
+    // #58508d #232356
   },
   toolbarIcon: {
     display: 'flex',
@@ -64,6 +69,7 @@ const useStyles = makeStyles(theme => ({
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
+    background: '#CDCDCD',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -75,9 +81,9 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    width: theme.spacing(7),
+    width: theme.spacing(1),
     [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(9),
+      width: theme.spacing(7),
     },
   },
   appBarSpacer: theme.mixins.toolbar,
@@ -135,11 +141,9 @@ export default function App() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={0} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <Typography align='right' component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+            Smartphone Market Analysis
+          </Typography>
         </Toolbar>
       </AppBar>
 
@@ -156,7 +160,7 @@ export default function App() {
           </IconButton>
         </div>
         <Divider />
-        <List>{mainListItems}</List>
+        <List><MyListItems/></List>
       </Drawer>
 
       <Switch>

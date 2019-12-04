@@ -42,10 +42,7 @@ const useStyles = makeStyles(theme => ({
 export default function Android() {
   const classes = useStyles();
   
-  const fixedMidHeightPaper = clsx(classes.paper, classes.fixedMidHeight);
-  const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
-
 
   return (
     <main className={classes.content}>
@@ -61,7 +58,6 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={5} lg={5}>
               <Paper className={fixedMaxHeightPaper}>
-                
               </Paper>
             </Grid>
             {/* Chart */}
@@ -70,8 +66,10 @@ export default function Android() {
               <SingleBarChart dataURL='http://localhost:4000/googleplayapps' />
               </Paper>
             </Grid>
-            
           </Grid>
+          <Box pt={4}>
+            <Copyright />
+          </Box>
 
         </Container>
     </main>
