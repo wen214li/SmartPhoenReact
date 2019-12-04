@@ -6,7 +6,7 @@ export default function Title(props) {
 
   return (
     <Typography component="h5" variant="h6" color="primary" gutterBottom>
-      {props.children}
+      <font size='4'>{props.children}</font>
     </Typography>
   );
 }

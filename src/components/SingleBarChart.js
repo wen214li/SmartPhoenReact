@@ -41,8 +41,8 @@ export default function MySingleBarChart(props) {
       <Title>{dataTitle}</Title>
       {/* <Title>Share of smartphone by operating system (percentage)</Title> */}
       <ResponsiveContainer>
-        <BarChart width={600} height={300} data={data}
-          margin={{top: 20, right: 30, left: 20, bottom: 5}}>
+        <BarChart width={500} height={300} data={data}
+          margin={{top: 20, right: 30, left: 20, bottom: 10}}>
           <CartesianGrid strokeDasharray="3 3"/>
           <XAxis dataKey="time" stroke={theme.palette.text.secondary}/>
           <YAxis stroke={theme.palette.text.secondary}/>

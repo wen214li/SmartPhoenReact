@@ -20,6 +20,8 @@ import MyListItems from './components/listItems';
 import Overview from './components/Overview.js';
 import IOS from './components/IOS.js';
 import Android from './components/Android.js';
+import Bestseller from './components/Bestseller.js';
+
 import {Switch,Route} from "react-router-dom";
 
 const drawerWidth = 240;
@@ -176,10 +178,13 @@ export default function App() {
         <Route path="/android">
           <Android/>
         </Route>
+        <Route path="/bestSeller">
+          <Bestseller/>
+        </Route>
         <Route path="/report">
           <Overview/>
         </Route>
-        <Route path="/placeholder">
+        <Route path="/">
           <Overview/>
         </Route>
       </Switch>         

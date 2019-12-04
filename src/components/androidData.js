@@ -8,15 +8,8 @@ import samsung_galaxy_s10_plus from '../images/samsung-galaxy-s10-plus.jpg'
 import samsung_galaxy_s10 from '../images/samsung-galaxy-s10.jpg'
 import xiaomi_redmi_6a from '../images/xiaomi-redmi-6a.jpg'
 import xiaomi_redmi_note_7 from '../images/xiaomi-redmi-note-7.jpg'
-import xiaomi from '../images/xiaomi.jpg'
 
 const androidData = [
-    {
-        img: xiaomi,
-        title: 'Xiaomi',
-        rank: 1,
-        url: "https://www.apple.com"
-    },
     {
         img: samsung_galaxy_j4_plus,
         title: 'Galaxy J4+',
@@ -79,4 +72,4 @@ const androidData = [
     },
   ];
 
-export default androidData;
+export default androidData

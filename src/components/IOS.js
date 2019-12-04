@@ -10,7 +10,7 @@ import PieChart from './PieChart'
 import Box from '@material-ui/core/Box';
 import Copyright from './Copyright'
 import SingleLineGridList from './SingleLineGridList'
-import androidData from './tileData.js';
+import iosData from './iosData.js';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -54,13 +54,13 @@ export default function IOS() {
       <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={2}>
             {/* Chart */}
-            <Grid item xs={12} md={7} lg={7}>
+            <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedMaxHeightPaper}>
                 <SingleBarChart dataURL='http://localhost:4000/iphoneuser' />
               </Paper>
             </Grid>
             {/* Chart */}
-            <Grid item xs={12} md={5} lg={5}>
+            <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedMaxHeightPaper}>
                 <PieChart dataURL='http://localhost:4000/applemodelshare' />
               </Paper>
@@ -68,7 +68,7 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                <SingleLineGridList data={androidData}/>
+                <SingleLineGridList data={iosData}/>
               </Paper>
             </Grid>
           </Grid>

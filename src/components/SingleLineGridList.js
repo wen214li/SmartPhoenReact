@@ -6,7 +6,9 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import PageviewIcon from '@material-ui/icons/Pageview';
 import Title from './Title';
-import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+
+import clsx from 'clsx';
 
 // const styles = {
 //     img: {
@@ -24,8 +26,10 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   img: {
-    width: 200,
-    height: 200,
+    width: 150,
+    // display: block,
+    // margin-left: auto,
+    // margin-right: auto,
   },
   gridList: {
     flexWrap: 'nowrap',
@@ -49,13 +53,16 @@ const useStyles = makeStyles(theme => ({
 function SingleLineGridList(props) {
   const classes = useStyles();
   const tileData = props.data
+  const gridListFixedImg = clsx(classes.img, classes.gridList);
+
   return (
     <React.Fragment>
-        <Title>Top 10 Best Selling Models</Title>
+        {/* <Title>Top 10 Best Selling Models</Title> */}
         <GridList className={classes.gridList} cols={5} spacing={5}>
+        {/* <GridList className={gridListFixedImg} cols={5} spacing={5}> */}
             {tileData.map(tile => (
-            <GridListTile key={tile.img} rows={1.6}>>
-                <img src={tile.img} alt={tile.title}/>
+            <GridListTile key={tile.img} rows={1.5}>>
+            <Grid container justify='center'><img className={classes.img} src={tile.img} alt={tile.title}/></Grid>
                 <GridListTileBar
                 title={tile.rank + '.' + tile.title}
                 classes={{

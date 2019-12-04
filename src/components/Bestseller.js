@@ -7,10 +7,12 @@ import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
 import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
-import Copyright from './Copyright'
 import Box from '@material-ui/core/Box';
+import Copyright from './Copyright'
 import SingleLineGridList from './SingleLineGridList'
+import iosData from './iosData.js';
 import androidData from './androidData.js';
+import Title from './Title';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -43,9 +45,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Android() {
+export default function Bestseller() {
   const classes = useStyles();
-  
+
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
   return (
@@ -53,29 +55,22 @@ export default function Android() {
       <div className={classes.appBarSpacer} />
       <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={2}>
-            {/* Chart */}
-            <Grid item xs={12} md={6} lg={6}>
-              <Paper className={fixedMaxHeightPaper}>
-                <SingleBarChart dataURL='http://localhost:4000/androiduser' />
-              </Paper>
-            </Grid>
-            {/* Chart */}
-            <Grid item xs={12} md={6} lg={6}>
-              <Paper className={fixedMaxHeightPaper}>
-                <SingleLineGridList data={androidData}/>
-              </Paper>
-            </Grid>
-            {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                <SingleBarChart dataURL='http://localhost:4000/googleplayapps' />
+                <Title>Top 5 Best Selling iphones</Title>
+                <SingleLineGridList data={iosData}/>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={12} lg={12}>
+              <Paper className={fixedMaxHeightPaper}>
+                <Title>Top 10 Best Selling Android Phones</Title>
+                <SingleLineGridList data={androidData}/>
               </Paper>
             </Grid>
           </Grid>
           <Box pt={4}>
             <Copyright />
           </Box>
-
         </Container>
     </main>
   );

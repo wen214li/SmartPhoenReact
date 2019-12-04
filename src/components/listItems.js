@@ -9,6 +9,7 @@ import AppleIcon from '@material-ui/icons/Apple';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
 import {Link} from "react-router-dom";
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 export default function MyListItems() {
@@ -50,6 +51,17 @@ export default function MyListItems() {
             <AndroidIcon />
           </ListItemIcon>
           <ListItemText primary="Android" />
+        </ListItem>
+      </Link>
+
+      <Link to='/bestSeller' className='text-link'>
+        <ListItem button
+          selected={selectedIndex === 2}
+          onClick={event => handleListItemClick(event, 2)}>
+          <ListItemIcon>
+            <FavoriteIcon />
+          </ListItemIcon>
+          <ListItemText primary="Best Seller" />
         </ListItem>
       </Link>
       
