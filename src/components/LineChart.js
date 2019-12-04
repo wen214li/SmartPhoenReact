@@ -14,13 +14,13 @@ export default function MyLineChart(props) {
 
   useEffect(
     () => {
-      console.log(props.dataURL);
+      //console.log(props.dataURL);
       const loadData = async () => {
         const response = await axios.get(props.dataURL);
         //console.log(response.data.dataKey);
-        setDataTitle(response.data.title);
-        setDataKey(response.data.dataKey);
-        setData(response.data.data);
+        setDataTitle(response.data[0].title);
+        setDataKey(response.data[0].dataKey);
+        setData(response.data[0].data);
       };
       loadData()
       

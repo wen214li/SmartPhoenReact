@@ -25,8 +25,9 @@ export default function StackedBarChart(props) {
     () => {
       const loadData = async () => {
         const response = await axios.get(props.dataURL);
-        setData(response.data.data);
-        setDataKey(response.data.dataKey);
+        //console.log("stacked", response.data)
+        setData(response.data[0].data);
+        setDataKey(response.data[0].dataKey);
       };
       loadData()
       

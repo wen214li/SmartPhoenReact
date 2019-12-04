@@ -14,8 +14,8 @@ export default function MyPieChart(props) {
         
         const loadData = async () => {
           const response = await axios.get(props.dataURL);
-          setData(response.data.data);
-          setDataTitle(response.data.title);
+          setData(response.data[0].data);
+          setDataTitle(response.data[0].title);
         };
         loadData()
         
@@ -41,3 +41,5 @@ export default function MyPieChart(props) {
       </React.Fragment>
     );
   }
+
+

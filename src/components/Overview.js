@@ -12,6 +12,7 @@ import LineChart from './LineChart';
 import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
+import BarChart from './BarChart'
 
 function Copyright() {
   return (
@@ -96,7 +97,7 @@ export default function Overview() {
             {/* Stacked Bar Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
-                <StackedBarChart dataURL='http://localhost:4000/androidvsios' />
+                <BarChart dataURL='http://localhost:4000/androidvsios' />
               </Paper>
             </Grid>
             {/* Pie Chart */}

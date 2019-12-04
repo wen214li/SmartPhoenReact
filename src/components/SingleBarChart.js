@@ -18,7 +18,7 @@ import Typography from '@material-ui/core/Typography';
 ];
 */
 
-export default function MyBarChart(props) {
+export default function MySingleBarChart(props) {
   const theme = useTheme();
   const [data, setData] = useState([]);
   const [dataKey, setDataKey] = useState({});
@@ -49,7 +49,6 @@ export default function MyBarChart(props) {
           <Tooltip/>
           <Legend />
           <Bar dataKey={dataKey['key0']} fill="#32a0fa" label/>
-            <Bar dataKey={dataKey['key1']} fill="#ff7878" label/>
         </BarChart>
       </ResponsiveContainer>
     </React.Fragment>
