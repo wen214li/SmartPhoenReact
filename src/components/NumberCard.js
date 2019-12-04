@@ -19,15 +19,6 @@ export default function Deposits(props) {
       <Typography component="p" variant="h7">
         {props.text}
       </Typography>
-      {/* <Typography component="p" variant="h6">
-      <font color='#232356'>{props.name}</font>
-      </Typography>
-      <Typography component="p" variant="h4" color="secondary">
-        <font color='#FFFFF'><b>{props.value}</b></font>
-      </Typography>
-      <Typography component="p" variant="h7">
-        <font color='#FFFFF'>{props.text}</font>
-      </Typography> */}
     </React.Fragment>
   );
 }
