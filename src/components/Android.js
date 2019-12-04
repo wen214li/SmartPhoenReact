@@ -7,6 +7,8 @@ import Paper from '@material-ui/core/Paper';
 import LineChart from './LineChart';
 import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
+import Copyright from './Overview';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,

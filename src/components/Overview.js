@@ -12,6 +12,9 @@ import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
 import BarChart from './BarChart'
+//import Copyright from '@material-ui/core/Copyright';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 
 function Copyright() {
   return (
