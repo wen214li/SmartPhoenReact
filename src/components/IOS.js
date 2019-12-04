@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import LineChart from './LineChart';
 import SingleBarChart from './SingleBarChart';
 import PieChart from './PieChart'
 import Box from '@material-ui/core/Box';
@@ -68,7 +67,6 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                <SingleLineGridList data={iosData}/>
               </Paper>
             </Grid>
           </Grid>

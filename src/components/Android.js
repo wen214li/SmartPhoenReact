@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import LineChart from './LineChart';
+// import LineChart from './LineChart';
 import SingleBarChart from './SingleBarChart';
-import PieChart from './PieChart'
+// import PieChart from './PieChart'
 import Copyright from './Copyright'
 import Box from '@material-ui/core/Box';
 import SingleLineGridList from './SingleLineGridList'
@@ -62,7 +62,6 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedMaxHeightPaper}>
-                <SingleLineGridList data={androidData}/>
               </Paper>
             </Grid>
             {/* Chart */}

@@ -12,23 +12,17 @@ import clsx from 'clsx';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    // flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
   img: {
     width: 150,
-    // display: block,
-    // margin-left: auto,
-    // margin-right: auto,
   },
   gridList: {
     flexWrap: 'nowrap',
     width: 1200,
     height: 500,
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    // transform: 'translateZ(0)',
   },
   title: {
     color: theme.palette.primary.light,

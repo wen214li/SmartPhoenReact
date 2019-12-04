@@ -8,7 +8,6 @@ import Box from '@material-ui/core/Box';
 
 import NumberCard from './NumberCard';
 import LineChart from './LineChart';
-import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
 import BarChart from './BarChart'
