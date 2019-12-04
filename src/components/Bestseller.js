@@ -54,14 +54,14 @@ export default function Bestseller() {
           <Grid container spacing={2}>
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                <Title>Top 5 Best Selling iphones</Title>
-                <SingleLineGridList data={iosData}/>
+                <Title>Top 10 Best Selling Android Phones</Title>
+                <SingleLineGridList data={androidData}/>
               </Paper>
             </Grid>
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                <Title>Top 10 Best Selling Android Phones</Title>
-                <SingleLineGridList data={androidData}/>
+                <Title>Top 5 Best Selling iphones</Title>
+                <SingleLineGridList data={iosData}/>
               </Paper>
             </Grid>
           </Grid>
