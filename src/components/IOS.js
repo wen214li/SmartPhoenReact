@@ -6,6 +6,10 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import BarChart from './BarChart';
 import PieChart from './PieChart'
+import Box from '@material-ui/core/Box';
+import Copyright from './Copyright'
+import SingleLineGridList from './SingleLineGridList'
+import androidData from './tileData.js';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -63,12 +67,13 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
-                
+                <SingleLineGridList data={androidData}/>
               </Paper>
             </Grid>
-            
           </Grid>
-
+          <Box pt={4}>
+            <Copyright />
+          </Box>
         </Container>
     </main>
   );

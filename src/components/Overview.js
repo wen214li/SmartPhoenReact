@@ -1,31 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
+import Box from '@material-ui/core/Box';
+
 import NumberCard from './NumberCard';
 import LineChart from './LineChart';
 import StackedBarChart from './StackedBarChart';
 import RadarChart from './RadarChart';
 import PieChart from './PieChart'
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
+import Copyright from './Copyright'
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -51,7 +37,8 @@ const useStyles = makeStyles(theme => ({
     height: 240,
   },
   fixedMinHeight: {
-    height: 120,
+    height: 130,
+    // background: '#CDCDCF'
   },
   fixedMaxHeight: {
     height: 360,
@@ -60,7 +47,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function Overview() {
   const classes = useStyles();
-
   const fixedMinHeightPaper = clsx(classes.paper, classes.fixedMinHeight);
   const fixedMaxHeightPaper = clsx(classes.paper, classes.fixedMaxHeight);
 
@@ -68,29 +54,29 @@ export default function Overview() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="xl" className={classes.container}>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} alignItems="center">
             {/* Number Card */}
-            <Grid item xs={3} md={3} lg={3}>
+            <Grid item xs={3} md={3} lg={3} direction='column'>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Production Volume 2019' value='1,480,000,000 units'/>
+                <NumberCard name='Production Volume' value='1,480 million' text=' units' />
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Global smartphone sales' value='$ 522 billion USD'/>
+                <NumberCard name='Global Sales' value='$522 billion' text=' USD'/>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Best seller in 2019 Q1' value='iPhoneXR: 11.57 million units'/>
+                <NumberCard name='Best Seller' value='iPhoneXR' text=' 11.57 million units'/>
               </Paper>
             </Grid>
             {/* Number Card */}
             <Grid item xs={3} md={3} lg={3}>
               <Paper className={fixedMinHeightPaper}>
-                <NumberCard name='Smartphone average price in 2019' value='$ 684.8 USD'/>
+                <NumberCard name='Average Price' value='$ 684.8' text=' USD'/>
               </Paper>
             </Grid>
             {/* Stacked Bar Chart */}
