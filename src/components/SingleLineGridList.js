@@ -5,7 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import PageviewIcon from '@material-ui/icons/Pageview';
-// import Title from './Title';
+import {Link} from "react-router-dom";
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 
@@ -60,12 +60,12 @@ function SingleLineGridList(props) {
                     imgFullWidth: classes.title,
                 }}
                 actionIcon={
+                  <Link target="_blank" to={tile.url}>
                     <IconButton 
                         aria-label={`star ${tile.title}`}
-                        href={tile.url}
-                    >
-                    <PageviewIcon className={classes.title} />
+                    ><PageviewIcon className={classes.title} />
                     </IconButton>
+                  </Link>
                 }
                 />
             </GridListTile>
