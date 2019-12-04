@@ -63,6 +63,7 @@ function SingleLineGridList(props) {
                     <IconButton 
                         aria-label={`star ${tile.title}`}
                         href={tile.url}
+                        target="_blank"
                     >
                     <PageviewIcon className={classes.title} />
                     </IconButton>
