@@ -56,8 +56,8 @@ export default function MyListItems() {
 
       <Link to='/bestSeller' className='text-link'>
         <ListItem button
-          selected={selectedIndex === 2}
-          onClick={event => handleListItemClick(event, 2)}>
+          selected={selectedIndex === 3}
+          onClick={event => handleListItemClick(event, 3)}>
           <ListItemIcon>
             <FavoriteIcon />
           </ListItemIcon>
@@ -67,8 +67,8 @@ export default function MyListItems() {
       
       <Link to='/report' className='text-link'>
         <ListItem button
-          selected={selectedIndex === 3}
-          onClick={event => handleListItemClick(event, 3)}>
+          selected={selectedIndex === 4}
+          onClick={event => handleListItemClick(event, 4)}>
           <ListItemIcon>
             <FeedbackIcon />
           </ListItemIcon>
@@ -78,8 +78,8 @@ export default function MyListItems() {
 
       <Link to='/placeholder' className='text-link'>
         <ListItem button
-          selected={selectedIndex === 4}
-          onClick={event => handleListItemClick(event, 4)}>
+          selected={selectedIndex === 5}
+          onClick={event => handleListItemClick(event, 5)}>
           <ListItemIcon>
             <CropLandscapeIcon />
           </ListItemIcon>
