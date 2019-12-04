@@ -13,22 +13,6 @@ import RadarChart from './RadarChart';
 import PieChart from './PieChart'
 import BarChart from './BarChart'
 import Copyright from './Copyright';
-// import Typography from '@material-ui/core/Typography';
-// import Link from '@material-ui/core/Link';
-
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {'Copyright © '}
-//       <Link color="inherit" href="">
-//         Your Website
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
-
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -96,7 +80,7 @@ export default function Overview() {
                 <NumberCard name='Average Price' value='$ 684.8' text=' USD'/>
               </Paper>
             </Grid>
-            {/* Stacked Bar Chart */}
+            {/* Two Line Bar Chart */}
             <Grid item xs={12} md={7} lg={7}>
               <Paper className={fixedMaxHeightPaper}>
                 <BarChart dataURL='http://localhost:4000/androidvsios' />
