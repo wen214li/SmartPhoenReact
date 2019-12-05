@@ -6,14 +6,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 import AndroidIcon from '@material-ui/icons/Android';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import AppleIcon from '@material-ui/icons/Apple';
-import FeedbackIcon from '@material-ui/icons/Feedback';
-import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
+//import FeedbackIcon from '@material-ui/icons/Feedback';
+//import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
 import {Link} from "react-router-dom";
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 export default function MyListItems() {
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const [selectedIndex, setSelectedIndex] = React.useState();
 
   const handleListItemClick = (event, index) => {
     setSelectedIndex(index);

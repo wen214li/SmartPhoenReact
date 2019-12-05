@@ -9,8 +9,8 @@ import SingleBarChart from './SingleBarChart';
 // import PieChart from './PieChart'
 import Copyright from './Copyright'
 import Box from '@material-ui/core/Box';
-import SingleLineGridList from './SingleLineGridList'
-import androidData from './androidData.js';
+//import SingleLineGridList from './SingleLineGridList'
+//import androidData from './androidData.js';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,

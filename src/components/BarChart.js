@@ -8,7 +8,7 @@ import Title from './Title';
 export default function MyBarChart(props) {
   const theme = useTheme();
   const [data, setData] = useState([]);
-  const [dataKey, setDataKey] = useState({});
+  const [dataKey, setDataKey] = useState({'key0':'0','key1':'0'});
   const [dataTitle, setDataTitle] = useState('Title');
   
   useEffect(
@@ -36,7 +36,7 @@ export default function MyBarChart(props) {
           <Tooltip/>
           <Legend />
           <Bar dataKey={dataKey['key0']} fill="#9abdc2" label/>
-            <Bar dataKey={dataKey['key1']} fill="#808e9d" label/>
+          <Bar dataKey={dataKey['key1']} fill="#808e9d" label/>
         </BarChart>
       </ResponsiveContainer>
     </React.Fragment>

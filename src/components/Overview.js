@@ -56,7 +56,7 @@ export default function Overview() {
         <Container maxWidth="xl" className={classes.container}>
           <Grid container spacing={2} alignItems="center">
             {/* Number Card */}
-            <Grid item xs={3} md={3} lg={3} direction='column'>
+            <Grid item xs={3} md={3} lg={3} >
               <Paper className={fixedMinHeightPaper}>
                 <NumberCard name='Production Volume' value='1,480 million' text=' units' />
               </Paper>
