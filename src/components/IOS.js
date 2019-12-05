@@ -67,6 +67,7 @@ export default function IOS() {
             {/* Chart */}
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedMaxHeightPaper}>
+                <SingleBarChart dataURL='http://localhost:4000/iosappstore' />
               </Paper>
             </Grid>
           </Grid>

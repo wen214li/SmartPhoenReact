@@ -3,7 +3,7 @@ import axios from 'axios';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Title from './Title';
 
-const COLORS = ['#64b2ed', '#ff6969','#ebe283', '#7acf7e', '#84e0e3', '#9a7ee6', '#e67ac7'];
+const COLORS = ['#1d3081','#2b5a9b', '#3884b6', '#47aed0', '#84c9cf', '#c6e3cb', '#f3f7d7'];
 
 export default function MyPieChart(props) {
     const [data, setData] = useState([]);

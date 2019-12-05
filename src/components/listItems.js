@@ -64,28 +64,6 @@ export default function MyListItems() {
           <ListItemText primary="Best Seller" />
         </ListItem>
       </Link>
-      
-      <Link to='/report' className='text-link'>
-        <ListItem button
-          selected={selectedIndex === 4}
-          onClick={event => handleListItemClick(event, 4)}>
-          <ListItemIcon>
-            <FeedbackIcon />
-          </ListItemIcon>
-          <ListItemText primary="Reports" />
-        </ListItem>
-      </Link>
-
-      <Link to='/placeholder' className='text-link'>
-        <ListItem button
-          selected={selectedIndex === 5}
-          onClick={event => handleListItemClick(event, 5)}>
-          <ListItemIcon>
-            <CropLandscapeIcon />
-          </ListItemIcon>
-          <ListItemText primary="Placeholder" />
-        </ListItem>
-      </Link>
     </div>
   );
 }
