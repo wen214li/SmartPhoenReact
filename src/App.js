@@ -138,11 +138,11 @@ export default function App() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Dashboard
+          <Typography component="h1" variant="h5" color="inherit" noWrap className={classes.title}>
+            <b>Dashboard</b>
           </Typography>
-          <Typography align='right' component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Smartphone Market Analysis
+          <Typography align='right' component="h1" variant="h5" color="inherit" noWrap className={classes.title}>
+            <b>Smartphone Market Statistics</b>
           </Typography>
         </Toolbar>
       </AppBar>
