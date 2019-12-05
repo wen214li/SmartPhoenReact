@@ -11,6 +11,7 @@ import Copyright from './Copyright'
 import Box from '@material-ui/core/Box';
 //import SingleLineGridList from './SingleLineGridList'
 //import androidData from './androidData.js';
+import AreaChart from './AreaChart';
 
 const useStyles = makeStyles(theme => ({
   appBarSpacer: theme.mixins.toolbar,
@@ -62,6 +63,7 @@ export default function Android() {
             {/* Chart */}
             <Grid item xs={12} md={6} lg={6}>
               <Paper className={fixedMaxHeightPaper}>
+                <AreaChart dataURL='http://localhost:4000/androidsales' />
               </Paper>
             </Grid>
             {/* Chart */}

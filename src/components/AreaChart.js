@@ -7,17 +7,14 @@ import Title from './Title';
 export default function MyAreaChart(props) {
   const theme = useTheme();
   const [data, setData] = useState([]);
-  const [dataKey, setDataKey] = useState({});
+  const [dataKey, setDataKey] = useState({'key0':'0','key1':'0'});
   const [dataTitle, setDataTitle] = useState('title');
 
   useEffect(
     () => {
-      //console.log(props.dataURL);
       const loadData = async () => {
         const response = await axios.get(props.dataURL);
-        //console.log(response.data.dataKey);
         setDataTitle(response.data[0].title);
-        setDataKey(response.data[0].dataKey);
         setData(response.data[0].data);
       };
       loadData()
@@ -40,10 +37,10 @@ export default function MyAreaChart(props) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="time" stroke={theme.palette.text.secondary} />
-          <YAxis />
+          <YAxis domain={[0,400]} stroke={theme.palette.text.secondary}/>
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey={dataKey['key0']} stroke="#9abdc2" fill="#9abdc2" />
+          <Area type="monotone" dataKey='sales' stroke="#9abdc2" fill="#9abdc2" />
         </AreaChart>
 
       </ResponsiveContainer>
