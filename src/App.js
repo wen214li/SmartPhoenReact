@@ -13,9 +13,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 import MyListItems from './components/listItems';
-
-
-
 import Overview from './components/Overview.js';
 import IOS from './components/IOS.js';
 import Android from './components/Android.js';
@@ -142,7 +139,7 @@ export default function App() {
             <b>Dashboard</b>
           </Typography>
           <Typography align='right' component="h1" variant="h5" color="inherit" noWrap className={classes.title}>
-            <b>Smartphone Market Statistics</b>
+            <b>Smartphone Market Stats</b>
           </Typography>
         </Toolbar>
       </AppBar>

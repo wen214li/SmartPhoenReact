@@ -70,7 +70,7 @@ function MyRadarChart() {
 
   return (
     <React.Fragment>
-      <Title>Comparison</Title>
+      <Title>Metrics Comparison</Title>
       <ResponsiveContainer>
         <RadarChart data={data} >
           <PolarGrid />
