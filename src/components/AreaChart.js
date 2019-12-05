@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useTheme } from '@material-ui/core/styles';
-import {XAxis, YAxis, CartesianGrid, Tooltip, Legend, Brush, AreaChart, Area,ResponsiveContainer} from 'recharts';
+import {XAxis, YAxis, CartesianGrid, Tooltip, Legend, AreaChart, Area,ResponsiveContainer} from 'recharts';
 import Title from './Title';
 
 export default function MyAreaChart(props) {
   const theme = useTheme();
   const [data, setData] = useState([]);
-  const [dataKey, setDataKey] = useState({'key0':'0','key1':'0'});
+//   const [dataKey, setDataKey] = useState({'key0':'0','key1':'0'});
   const [dataTitle, setDataTitle] = useState('title');
 
   useEffect(
