@@ -7,7 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import PageviewIcon from '@material-ui/icons/Pageview';
 // import Title from './Title';
 import Grid from '@material-ui/core/Grid';
-import clsx from 'clsx';
+//import clsx from 'clsx';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 function SingleLineGridList(props) {
   const classes = useStyles();
   const tileData = props.data
-  const gridListFixedImg = clsx(classes.img, classes.gridList);
+  //const gridListFixedImg = clsx(classes.img, classes.gridList);
 
   return (
     <React.Fragment>
