@@ -76,9 +76,9 @@ function MyRadarChart() {
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" stroke={theme.palette.text.secondary}/>
           <PolarRadiusAxis angle={90} domain={[0, 1]} stroke={theme.palette.text.secondary}/>
-          <Radar name="iPhone XR" dataKey="iPhone XR" stroke="#8884d8" fill="#8884d8" fillOpacity={0.05} />
-          <Radar name="Galaxy J4+" dataKey="Galaxy J4+" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.05} />
-          <Radar name="Mate 20 Pro" dataKey="Mate 20 Pro" stroke="#820a00" fill="#820a00" fillOpacity={0.05} />
+          <Radar name="iPhone 11 Pro" dataKey="iPhone 11 Pro" stroke="#8884d8" fill="#8884d8" fillOpacity={0.05} />
+          <Radar name="Samsung Galaxy Note10+" dataKey="Samsung Galaxy Note10+" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.05} />
+          <Radar name="Huawei Mate 30 Pro" dataKey="Huawei Mate 30 Pro" stroke="#820a00" fill="#820a00" fillOpacity={0.05} />
           <Legend />
           <Tooltip />
         </RadarChart>
