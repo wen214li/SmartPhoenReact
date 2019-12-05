@@ -51,7 +51,6 @@ function SingleLineGridList(props) {
                 classes={{
                     root: classes.titleBar,
                     title: classes.title,
-                    imgFullWidth: classes.title,
                 }}
                 actionIcon={
                     <IconButton 
